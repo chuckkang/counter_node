@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			This will be the index page of the project!
+			These are some changes!<br>
+			--<%= data.count %>--
+			<br>
+			<h1>Counter</h1>
+			<form method="post" action="/">
+				<input type="hidden" name="counter" value="<%= data.count %>">
+				<input type="submit" value="SUBMIT">
+			</form>
+			<form method="post" action="/">
+				<input type="hidden" name="counter" value="0">
+				<input type="submit" value="RESET">
+			</form>
+			<form method="post" action="/">
+				<input type="hidden" name="counter" value="<%= data.count + 1 %>">
+				<input type="submit" value="ADD 2">
+			</form>
+			<img src="images/cat1.jpg">
+		</div>
+	</body>
+</html>
